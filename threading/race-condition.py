@@ -12,22 +12,27 @@ class FakeDatabase:
         logging.info("Thread %s: starting update", name)
         logging.debug("Thread %s about to lock")
 
-        with self._lock:
+        if "lock" in sys.argv:
+            # race condition fixed if we lock
+            with self._lock:
+                local_copy = self.value
+                local_copy += 1
+                time.sleep(0.1)
+                self.value = local_copy
+        else:
+            # race condition if we do the following
             local_copy = self.value
             local_copy += 1
             time.sleep(0.1)
             self.value = local_copy
-        """
-        local_copy = self.value
-        local_copy += 1
-        time.sleep(0.1)
-        self.value = local_copy
-        """
         logging.debug("Threading %s after release", name)
         logging.info("Thread %s: finishing update", name)
 
 
 if __name__ == "__main__":
+    import sys
+    print(sys.argv)
+
     myformat = "%(asctime)s: %(message)s"
     logging.basicConfig(format=myformat, level=logging.DEBUG,
                         datefmt="%H:%M:%S")
