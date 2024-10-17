@@ -25,7 +25,7 @@ def chunk_stream(text_stream: Generator[str, None, None], stop_token: str) -> Ge
                 else:
                     yield stream[:breaks[0]]
                     for i in range(1,len(breaks)):
-                        yield stream[breaks[i]:breaks[i+1]]
+                        yield stream[breaks[i-1]:breaks[i]]
                     yield stream[breaks[-1]:]
                     breaks = []
                 stream = next(text_stream)
@@ -64,8 +64,13 @@ print_chunk(input_text2)
 
 input_text3 = [
     "Hello, what's your name <E",
-    "D> How are you"
+    "N",
+    "> How are you",
+    "I am good<END>",
+    "Thank you"
 ]
 
 print_chunk(input_text3)
+
+
 
