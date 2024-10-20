@@ -22,6 +22,18 @@ if __name__ == "__main__":
     x.join()
     logging.info("Main    : all done")
 
+"""
+15:01:31: Main    : before creating thread
+15:01:31: Main    : before running thread
+15:01:31: Thread 1: starting
+15:01:31: Thread identity: 123145550880768
+15:01:31: Main    : wait for the thread to finish
+
+
+15:01:41: Thread 1: finishing on a
+15:01:41: Main    : all done
+
+"""
 
 """
 here is the log if we 
