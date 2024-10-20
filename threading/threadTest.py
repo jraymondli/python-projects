@@ -22,6 +22,9 @@ if __name__ == "__main__":
     x.join()
     logging.info("Main    : all done")
 
+
+# Did not see a difference between line 17 and line 18
+
 """
 15:01:31: Main    : before creating thread
 15:01:31: Main    : before running thread
