@@ -11,5 +11,4 @@ def two_sum(arr, t):
       if len(v_dict[val]) < 2: continue 
       return v_dict[val][:2]
 
-    return []
     
