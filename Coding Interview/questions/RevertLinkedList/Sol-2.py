@@ -31,5 +31,8 @@ new_head = revert(l, tail)
 printList(new_head)
 
 
+## Key take away in pointer manipulation is to save pointer (which is needed later in a different calculation) before modifying it
+
+
 
 
