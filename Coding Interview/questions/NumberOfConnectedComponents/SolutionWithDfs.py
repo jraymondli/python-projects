@@ -1,4 +1,3 @@
-from union_find import UnionFind
 from collections import defaultdict
 
 def count_components(n, edges):
