@@ -25,7 +25,7 @@ class LRUCache:
     def update(self, key):
         ln = self.ln_dict[key]
         if ln != self.head: 
-            if ln == self.tail:
+            if ln == self.tail: # make sure tail is updated
               self.tail = ln.prev 
             ln.prev.next = ln.next 
             if ln.next: ln.next.prev = ln.prev 
