@@ -17,8 +17,8 @@ class ListNode:
 class LRUCache:
     def __init__(self, capacity):
       self.capacity = capacity
-      self.ln_dict = {}
-      self.val_dict = {}
+      self.ln_dict = {}        # list node dictionary
+      self.val_dict = {}       # value dictionary
       self.head = None 
       self.tail = None
       
