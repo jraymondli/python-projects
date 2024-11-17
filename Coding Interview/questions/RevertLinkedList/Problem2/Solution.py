@@ -20,7 +20,6 @@ def reverse_between(head, left, right):
   if head == None or head.next == None or left == right: return head 
   
   left_prev, right_next = findMarkers(head, left, right)
-  # print(left_prev.data, right_next.data)
   if left_prev == None: prev = head
   else: prev = left_prev.next 
   curr, new_tail = prev.next, right_next
