@@ -6,7 +6,7 @@ def search(nums, target):
     n = len(nums)
     l, r = 0, n-1 
     
-    while  l <= r: 
+    while  <span style="background-color: yellow">l <= r</span>: 
         m = (l+r) // 2
         if nums[m] == target:
             return m
