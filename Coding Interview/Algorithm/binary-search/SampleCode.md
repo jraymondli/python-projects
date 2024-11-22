@@ -7,7 +7,7 @@ def search(nums, target):
     n = len(nums)
     l, r = 0, n-1 
     
-    while  <span style="background-color: yellow">l <= r</span>: 
+    while  l <= r: 
         m = (l+r) // 2
         if nums[m] == target:
             return m
@@ -19,3 +19,4 @@ def search(nums, target):
             
     return - 1
 ```
+ <span style="background-color: yellow">l <= r</span>
