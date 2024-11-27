@@ -1,4 +1,4 @@
-Sure! Dijkstra's algorithm is used to find the shortest path between nodes in a graph. Here's an overview and a working Python example.
+Dijkstra's algorithm is used to find the shortest path between nodes in a graph. Here's an overview and a working Python example.
 
 ### Steps of Dijkstra's Algorithm
 1. **Initialize Distances**: Set the distance to the source node to 0 and all other nodes to infinity.
