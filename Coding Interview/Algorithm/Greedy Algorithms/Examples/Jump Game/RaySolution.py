@@ -14,3 +14,8 @@ def jump_game(nums):
         reached[nxt_index] = True 
 
     return False
+
+
+# Complexity: 
+#     - Time O(n^2)
+#     - Space O(n)
