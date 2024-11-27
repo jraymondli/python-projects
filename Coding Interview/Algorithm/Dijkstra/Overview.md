@@ -1,13 +1,13 @@
 Dijkstra's algorithm is used to find the shortest path between nodes in a graph. Here's an overview and a working Python example.
 
-### Steps of Dijkstra's Algorithm
+## Steps of Dijkstra's Algorithm
 1. **Initialize Distances**: Set the distance to the source node to 0 and all other nodes to infinity.
 2. **Visited Set**: Maintain a set of visited nodes to avoid reprocessing.
 3. **Priority Queue**: Use a priority queue (or a min-heap) to always process the node with the smallest known distance.
 4. **Relaxation**: For the current node, check its neighbors. If the total cost of the path to a neighbor is smaller than the known cost, update it.
 5. **Repeat**: Continue until all nodes are processed or the shortest path to the target node is found.
 
-### Python Implementation
+## Python Implementation
 Here’s a Python implementation using the `heapq` module for the priority queue:
 
 ```python
