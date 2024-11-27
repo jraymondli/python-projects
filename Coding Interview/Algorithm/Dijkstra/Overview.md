@@ -64,6 +64,10 @@ print(f"Shortest paths from {start_node}:")
 for node, distance in shortest_paths.items():
     print(f"Node {node}: Distance {distance}")
 ```
+### Notes
+
+1. The check `current_distance > distances[current_node]` is needed as we may have enqueued multiple distrance update on a node based on multiple nodes that are closer to the source than this node.
+
 
 ### Example Graph
 The graph in the example above is represented as an adjacency list:
