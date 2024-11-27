@@ -81,4 +81,10 @@ Node C: Distance 3
 Node D: Distance 6
 ```
 
-This implementation is efficient and works for graphs with non-negative weights. If you have questions or need further clarification, let me know!
+This implementation is efficient and works for graphs with non-negative weights. 
+
+## References
+
+- https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
+
